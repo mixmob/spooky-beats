@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IM Fell Double Pica', serif;
+  background-image: url('assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fefefe;
+}
+
+/* background */
+.video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+/* logo */
+.intro {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5em;
+  color: transparent;
+  text-shadow: 1px 1px 1px #D42200;
+  font-family: 'Nosifer', sans-serif;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* header */
+.header {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+  font-weight: 100;
+  text-shadow: 2px 2px 2px #D42200;
+}
+
+a {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.get-tickets {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-size: 2em;
+  background: transparent;
+  font-family: 'Nosifer', sans-serif;
+  color: #D42200;
+  padding: 0.5em;
+  width: 300px;
+  border: 2px solid #D42200;
+}
+
+.get-tickets:hover {
+  background-color: #D42200;
+  color: #000;  
+}
+
+/* lineup */
+.lineup {
+  margin: 3em auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+.headliner {
+  width: 100%;
+  max-width: 400px;
+  filter: drop-shadow(2px 2px 2px #D42200);
+}
+
+.artists {
+  font-size: 4em;
+  margin: 0;
+  font-family: 'Jim Nightshade', cursive;
+  text-shadow: 2px 2px 2px #D42200;
+}
+
+.artist:after, .bullet {
+  content: "•";
+  font-family: 'Nosifer', sans-serif;
+  margin: 0 0.5em;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.artist:last-child:after {
+  content: none;
+}
+
+/* mobile */
+@media all and (max-width: 650px) {
+  /* static background */
+  .video-background {
+    display: none;
+  }
+
+  /* single column artists */
+  .artist {
+    display: block;
+    width: 100%;
+  }
+  .artist:after {
+    content: none;
+  }
+}
